@@ -26,7 +26,7 @@ async def cmd_quiz(message: types.Message):
     await message.answer(f"Давайте начнем квиз!")
     await new_quiz(message)
 
-
+# При ответе на вопрос
 @dp.callback_query()
 async def wrong_answer(callback: types.CallbackQuery):
     await callback.bot.edit_message_reply_markup(
